@@ -1,0 +1,37 @@
+[user]
+    name = Ezekiel Smithburg
+    email = tehgeekmeister@gmail.com
+[core]
+    editor = "vim"
+    excludesfile = ~/public-dotfiles/.gitignore_global
+    quotepath = false
+[color]
+    diff = true
+    branch = true
+    grep = true
+[push]
+    default = current
+[pull]
+    default = current
+[alias]
+    p = push
+    pl = pull
+    cl = clone
+    st = status
+    co = checkout
+    ci = commit -m
+    br = branch
+    df = diff
+    cdf = diff --cached
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    ll = log --graph --decorate --pretty=oneline --abbrev-commit
+    lla = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    ls = ls-files
+    pick = add -p
+    pi = add -p
+    bl = blame
+    nb = "!f() { git checkout -b $1 master; }; f"
+    rbm = rebase -i master
+    sync = !git pull&&git push
+    cis = !git commit&&git pull&&git push
+    dpl = !git push&git push heroku
