@@ -32,6 +32,7 @@
     bl = blame
     nb = "!f() { git checkout -b $1 master; }; f"
     rbm = rebase -i master
+    rbd = rebase -i dangerzone
     sync = !git pull&&git push
     cis = !git commit&&git pull&&git push
     dpl = !git push&git push heroku
